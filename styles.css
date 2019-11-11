@@ -1,0 +1,328 @@
+/***FONTS AND LINES***/
+
+@font-face {
+    font-family: PostScriptum;
+    src: url('fonts/PostScriptumLight.ttf')
+}
+
+.blackLine {
+    height: 20px;
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: row;
+}
+
+/*---LOGO---*/
+
+.navbarTop {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: -1%;
+}
+
+.logoIcon {
+    filter: brightness(100) grayscale(100) invert(5);
+    height: 100%;
+    width: 5%;
+    margin-top: -1%;
+}
+
+.containerLogo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 2%;
+    position: relative;
+    margin-top: -2%;
+}
+
+.containerLogoLetters {
+    font-family: 'Orbitron', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.imageLogo {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 3px;
+    filter: contrast(1.1) saturate(2);
+}
+
+.titleLogo {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: -1px;
+    font-size: 3rem;
+}
+
+.subtitleLogo {
+    font-size: large;
+    color: #000;
+}
+
+/*---NAVBAR MENU---*/
+
+.navbarMain {
+    margin-top: 0.8%;
+    color:white;
+    background-color: black;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif !important;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.menuPages {
+    width: 50%;
+    padding-left: 20px;
+}
+
+/*---NAVBAR SEARCH---*/
+
+.menuSearch {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navSearch {
+    display: flex;
+    flex-direction: row-reverse
+}
+
+.styleBtn {
+    background-color: #FFEC00; 
+    color: black;
+    font-weight: bold;
+    border-color: #FFEC00;
+}
+
+.styleButton {
+    background-color: #00AEAE; 
+    color: black;
+    font-weight: bold;
+    border-color: #00AEAE;
+}
+
+.styleSearch {
+    border-color: black;
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.styleBox {
+    display: block;
+    width: 60%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid black;
+    border-radius: .50rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/***PRESENTATION***/
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.presentation {
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    width: 100%;
+}
+
+/*---SLOGAN CALL TO ACTION---*/
+
+.sloganAll {
+    background: rgba(00,00,00,0.8);
+    border-radius: .50rem;
+    margin: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.sloganTitle {
+    font-family: 'PostScriptum', sans-serif !important;
+    font-weight: bolder;
+    font-size: 4em;
+    color: #00AEAE;
+}
+
+.sloganSubtitle {
+    font-family: sans-serif;
+    color: white;
+}
+
+.sloganBackground {
+    height: 600px;
+    width: 100% ;
+    background-color: black;
+    background: url(./images/pc-bg.jpeg) no-repeat fixed center right;
+    filter: contrast(1.2);
+    background-attachment: unset;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+}
+
+/*---CARROUSEL RECOMMENDED BOOKS---*/
+
+.recommendedBackground {
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.recommendedTitle {
+    display: flex;
+    justify-content: center;
+    color: rgba(255,255,255,.5);
+    font-family: 'PostScriptum', sans-serif !important;
+    font-weight: bolder;
+    font-size: 2em;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 350px;
+    height: 450px;
+    filter: saturate(1.8);
+  }
+
+.carousel-inner > .carousel-item > p {
+    color: white;
+}
+
+/***SEPARADOR SECCIONES***/
+
+.mediumTitle {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    font-family: 'Orbitron', sans-serif !important;
+    /*maybe postscriptum font is better*/
+    font-size: 2em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+}
+
+/*.categoriesLink {
+    color:black;
+}*/
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    /*-ms-flex-direction: column;*/
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    color: whitesmoke;
+    background-color: black;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .50rem;
+}
+
+.popularBooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.newBooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.topBooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.topBooksTitle {
+    color: #FFEC00;
+}
+
+.moreBooks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*---MARKETING CALL TO ACTION---*/
+
+.marketingBackground {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    background: url(./images-test/pc-table-bg.jpeg) no-repeat fixed center right;
+    filter: contrast(1.2);
+    background-attachment: unset;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+
+.marketingAll {
+    background: rgba(00,00,00,0.8);
+    border-radius: .50rem;
+    margin: 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-self: center;
+}
+
+/*
+.sloganTitle {
+    font-family: 'PostScriptum', sans-serif !important;
+    font-weight: bolder;
+    font-size: 4em;
+    color: #00AEAE;
+}
+
+.sloganSubtitle {
+    font-family: sans-serif;
+    color: white;
+}*/
+
+/***FOOTER***/
+
+footer {
+    background:black;
+    padding-top: 3%;
+    padding-bottom: 3%;;
+    margin-top: 3%;
+    text-align: center;
+    color: rgba(255,255,255,.5)
+}
+
+/*limpiar el css y sintetizar código repetido con inheritance y specification*/
